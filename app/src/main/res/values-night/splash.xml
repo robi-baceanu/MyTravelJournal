@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MyTravelJournal.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/purple_500</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_travel_journal_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyTravelJournal.NoActionBar</item>
+    </style>
+</resources>

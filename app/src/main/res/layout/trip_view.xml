@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_trip"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_view_picture"
+        android:layout_width="288dp"
+        android:layout_height="162dp"
+        android:contentDescription="@string/trip_picture"
+        android:scaleType="fitCenter"
+        android:alpha=".50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_picture"
+        app:layout_constraintStart_toStartOf="@+id/image_view_picture"
+        app:layout_constraintTop_toTopOf="@+id/image_view_picture" />
+
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="@+id/text_view_location"
+        app:layout_constraintStart_toStartOf="@+id/text_view_location"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_location" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_picture"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_picture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
